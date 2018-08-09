@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.github.Augugrumi</groupId>
             <artifactId>chaining-functionalities</artifactId>
-            <version>3dbc359fc2bd1acf2a5b33faf5c6b80f35cca7f0</version>
+            <version>d9db7e78aa33abed462b31927e8244591b533b95</version>
         </dependency>
     </dependencies>
 
