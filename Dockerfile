@@ -23,6 +23,5 @@ FROM java:8
 ENV PORT=8080
 ENV LINKS=http://localhost
 WORKDIR /
-ADD vnflauncher-with-dependencies.jar vnflauncher-with-dependencies.jar
 EXPOSE $PORT
-CMD java -jar vnflauncher-with-dependencies.jar $PORT $LINKS
+CMD java -jar vnflauncher.jar $PORT $LINKS
