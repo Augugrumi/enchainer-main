@@ -8,10 +8,6 @@ public class LauncherVNF {
         for (String s : args)
             System.out.println(s);
         String[] chain = Arrays.copyOfRange(args, 1, args.length);
-        try {
-            new Enchainer(Integer.parseInt(args[0]), chain).execute();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new Enchainer(Integer.parseInt(args[0]), chain).execute();
     }
 }
