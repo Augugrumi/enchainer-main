@@ -18,11 +18,8 @@ FROM openjdk:8-jre-alpine
 ENV LINKS=http://localhost
 LABEL license="GPLv3+"
 
-RUN mkdir -p /config/
-VOLUME /config/
 WORKDIR /srv/
 
-WORKDIR /
 COPY --from=builder /vnflauncher.jar /srv/vnflauncher.jar
 EXPOSE 80
 
