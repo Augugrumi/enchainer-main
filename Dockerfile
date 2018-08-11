@@ -13,9 +13,7 @@ RUN apt-get update &&  \
     apt-get install -y maven git
 
 # Builds the launcher
-RUN git clone https://github.com/Augugrumi/enchainer-main.git && \
-    cd enchainer-main && \
-    mvn package && \
+RUN mvn package && \
     mv target/vnflauncher-1.0-SNAPSHOT-jar-with-dependencies.jar /vnflauncher.jar
 
 
